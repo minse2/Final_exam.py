@@ -1,0 +1,19 @@
+def solution(age):
+
+    age = age.replace("a", "0")
+    age = age.replace("b", "1")
+    age = age.replace("c", "2")
+    age = age.replace("d", "3")
+    age = age.replace("e", "4")
+    age = age.replace("f", "5")
+    age = age.replace("g", "6")
+    age = age.replace("h", "7")
+    age = age.replace("i", "8")
+    age = age.replace("j", "9")
+
+    answer = age
+
+    return answer
+
+result = solution("abc")
+print(result)
