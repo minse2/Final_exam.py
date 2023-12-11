@@ -1,0 +1,9 @@
+def solution(my_string, target):
+    if target in my_string:
+        return 1
+    else:
+        return 0
+
+
+result = solution("Life is too short, You need python", "python")
+print(result)
