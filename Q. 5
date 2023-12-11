@@ -1,0 +1,9 @@
+def solution(numbers):
+    string_numbers = [str(num) for num in numbers]
+    string_numbers.sort(key=lambda x: x*3, reverse=True)
+    answer = ''.join(string_numbers)
+    return answer
+
+numbers = [8, 30, 17, 2, 23]
+result = solution(numbers)
+print(result)
