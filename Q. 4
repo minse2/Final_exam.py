@@ -1,1 +1,16 @@
+def solution(r1, r2):
+    a = (r1-r2)**2
+    b = (r1+r2)**2
 
+    answer = 0
+    for x in range(-r2, r2+1):
+        for y in range(-r2, r2+1):
+            c = x**2+y**2
+
+            if a <= c <= b:
+               answer += 1
+
+    return answer
+
+result = solution(3, 5)
+print(result)
